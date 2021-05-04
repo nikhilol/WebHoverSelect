@@ -1,3 +1,12 @@
+.hvtool{
+  border: 1px solid transparent;
+}
+.hvtool :hover{
+  /* opacity: 0.7; */
+  border: 1px solid currentColor ; 
+  cursor: copy;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +45,5 @@
     transform: rotate(360deg);
   }
 }
+
+
