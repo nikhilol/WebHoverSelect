@@ -17,6 +17,10 @@ function App() {
   }
 
   useEffect(() => {
+    prepare()
+  })
+
+  function prepare(){
     let elements: NodeListOf<Element> = document.getElementsByTagName('body')[0].querySelectorAll('*')
     console.log(elements)
     let arrayOfElements = Array.from(elements)
@@ -30,7 +34,8 @@ function App() {
       // element.className +=   ' ' + arrayOfElements.indexOf(element);
     })
     console.log(textElementArr)
-  }, [])
+    return
+  }
 
   return (
     <div className="App">
